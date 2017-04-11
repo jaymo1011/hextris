@@ -112,13 +112,13 @@ function showText(text) {
     if (text == 'gameover') {
         var allZ = 1;
         var i;
-
+/*
         for (i = 0; i < 3; i++) {
             if (highscores.length > i) {
                 messages['gameover'] += "<tr> <th class='tg-031e'>" + (i + 1) + ".</th> <th class='tg-031e'>" + highscores[i] + " pts</th> </tr>";
             }
         }
-
+*/
         var restartText;
         if (settings.platform == 'mobile') {
             restartText = 'Tap anywhere to restart!';
@@ -135,7 +135,6 @@ function showText(text) {
             }
         }
     }
-    messages['gameover'] += "<div class='fltrt' id='tweetStuff'><a class='tweet' href='https://twitter.com/intent/tweet?text=Can you beat my score of "+ score +" points at&button_hashtag=hextris ? http://hextris.github.io/hextris @hextris' data-lang='en' data-related='hextris:hextris' target='_blank'>Share Your Score on Twitter!!!</a></div>"
     $("#overlay").html(messages[text]);
     $("#overlay").fadeIn("1000", "swing");
 
