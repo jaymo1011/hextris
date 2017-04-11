@@ -307,7 +307,10 @@ function isInfringing(hex) {
 function checkGameOver() {
     for (var i = 0; i < MainHex.sides; i++) {
         if (isInfringing(MainHex)) {
-            $.get('http://54.183.184.126/' + String(score))
+           // $.get('http://54.183.184.126/' + String(score)) // lol wtf was this for?
+		   
+			console.sendscore(score) // sending the score to the gmod client
+			
             if (highscores.indexOf(score) == -1) {
                 highscores.push(score);
             }
