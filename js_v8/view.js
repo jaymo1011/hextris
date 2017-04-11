@@ -100,7 +100,7 @@ function showText(text) {
         'paused': "<div class='centeredHeader unselectable'>Paused</div><br><div class='unselectable centeredSubHeader'>Press p to resume</div><div style='height:100px;line-height:100px;cursor:pointer;'></div>",
         'pausedAndroid': "<div class='centeredHeader unselectable'>Paused</div><br><div class='unselectable centeredSubHeader'>Press <i class='fa fa-play'></i> to resume</div><div style='height:100px;line-height:100px;cursor:pointer;'></div><div class='unselectable centeredSubHeader' style='margin-top:-50px;'><a href = 'market://details?id=com.hextris.hextrisadfree' target='_blank'>Don't like ads? Want to support the developer? Tap for the ad-free version.</a></div>",
         'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Press enter to start</div>",
-        'gameover': "<div class='centeredHeader unselectable'> Game Over: " + score + " pts</div><br><div style='font-size:24px;' class='centeredHeader unselectable'> High Scores:</div><table class='tg' style='margin:0px auto'> "
+        'gameover': "<div class='centeredHeader unselectable' style='font-size:24px;' > Game Over: " + score + " pts</div><br><table class='tg' style='margin:0px auto'> "
     };
 
     if (text == 'paused') {
